@@ -7,7 +7,33 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+       <!--div para saludo -->
+    <div class="titulo" id="inicio">
+        <h1 >Code Mate </h1>
+        <h2 >Bienvenido</h2>
+      <!--ingresar contraseña-->
+      <input  type="password" id= "contrasena" 
+      input class="filter-input" placeholder="Ingrese código"  
+       required="LABORATORIA"/>
+      <!--ejecutar accion -->
+      <button type="button"  id="btn">CONTINUAR</button>
+      </div>
+      <!--muestra segunda vista-->
+      <div id="saludo" class="titulo" style=display:none >
+        <h1>Código secreto</h1>
+        <h2>Empecemos a Cifrar o Descifrar</h2>
+      </div>
+      <!--Muestra mensaje de error-->
+      <div id="error" class="titulo" style=display:none>
+        <h1>OOPS!</h1>
+      </div> 
+      <!--Muestra mensaje de Bloqueado-->
+      <div id="msjbloqueado" class="titulo" style=display:none>
+          <img scr="sad.png" alt="">
+          <h1>Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
+      </div>
+    </main>
     <footer></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
