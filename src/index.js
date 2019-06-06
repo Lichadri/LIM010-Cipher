@@ -19,19 +19,18 @@ btn.addEventListener("click", () =>{
     const rpta = contrasenaCorrect.value;
     if(rpta=== "LABORATORIA" ){
     //mostrar y oculta para la segunda vista
-    inicio.style.display="none"
-    saludo.style.display="block"
-    error.style.display="none"
+    inicio.classList.add('hide')
+    saludo.classList.remove('hide')
+    error.classList.add('hide')
     }
     else{
-    error.style.display="block"
+    error.classList.remove('hide')
     cont++
-    alert(cont)
-    if( cont===3){
-    msjbloqueado.style.display="block"
-    error.style.display="none"
-    saludo.style.display="none"
-    inicio.style.display="none"
+    if( cont >= 3){
+    msjbloqueado.classList.remove('hide')
+    error.classList.add('hide')
+    saludo.classList.add('hide')
+    inicio.classList.add('hide')
     }
     }
      

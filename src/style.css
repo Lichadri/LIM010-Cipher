@@ -11,13 +11,13 @@
     font-weight: bold;
   }
   
-  
-  }
   .nombre{
     text-align: center;
     color:black;
   }
   
+  .hide {
+    display: none;
   }
 
   

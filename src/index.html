@@ -13,25 +13,34 @@
         <h1 >Code Mate </h1>
         <h2 >Bienvenido</h2>
       <!--ingresar contraseña-->
-      <input  type="password" id= "contrasena" 
-      input class="filter-input" placeholder="Ingrese código"  
-       required="LABORATORIA"/>
+      <input  type="password" id= "contrasena" input class="filter-input" placeholder="Ingrese código" required="LABORATORIA"/>
       <!--ejecutar accion -->
       <button type="button"  id="btn">CONTINUAR</button>
       </div>
-      <!--muestra segunda vista-->
-      <div id="saludo" class="titulo" style=display:none >
-        <h1>Código secreto</h1>
-        <h2>Empecemos a Cifrar o Descifrar</h2>
-      </div>
       <!--Muestra mensaje de error-->
-      <div id="error" class="titulo" style=display:none>
+      <div id="error" class="titulo hide" >
         <h1>OOPS!</h1>
       </div> 
       <!--Muestra mensaje de Bloqueado-->
-      <div id="msjbloqueado" class="titulo" style=display:none>
-          <img scr="sad.png" alt="">
+      <div id="msjbloqueado" class="titulo hide" >
+          <img scr="sad.png" alt="sad">
           <h1>Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
+      </div>
+      <!--muestra segunda vista-->
+      <div id="saludo" class="titulo hide" >
+          <h1>Código secreto</h1>
+          <h2>Empecemos a Cifrar o Descifrar</h2>
+          <label for="offset">Offset</label>
+          <input type="number" id="offset" name="offset"  min="1">
+          <br>
+          <br>
+          <textarea name="ta1" id="ta1" cols="30" rows="10">Cifrar</textarea>
+          <textarea name="ta2" id="ta2" cols="30" rows="10">Descifrar</textarea>
+          <br>
+          <br>
+          <button type="button" id="cifrar">Cifrar</button>
+          <button type="button" id="descifrar">Descifrar</button>
+          <button type="reset" id="limpiar">Borrar</button>
       </div>
     </main>
     <footer></footer>
