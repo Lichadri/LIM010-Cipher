@@ -35,3 +35,5 @@ btn.addEventListener("click", () =>{
     }
      
   });
+
+//funcion para cifrar
