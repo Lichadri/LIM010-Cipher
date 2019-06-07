@@ -1,1 +1,23 @@
 /* Acá van tus reglas de estilo */
+/* */
+
+  
+  .titulo{
+    color:red;
+    text-align: center;
+  }
+  h1{
+    font-size: 26;
+    font-weight: bold;
+  }
+  
+  .nombre{
+    text-align: center;
+    color:black;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  
