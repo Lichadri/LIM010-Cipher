@@ -13,7 +13,7 @@
         <h1 >Code Mate </h1>
         <h2 >Bienvenido</h2>
       <!--ingresar contraseña-->
-      <input  type="password" id= "contrasena" input class="filter-input" placeholder="Ingrese código" required="LABORATORIA"/>
+      <input  type="password" id= "contrasena" input class="filter-input" placeholder="Ingrese código" value="LABORATORIA"/>
       <!--ejecutar accion -->
       <button type="button"  id="btn">CONTINUAR</button>
       </div>
@@ -30,17 +30,19 @@
       <div id="saludo" class="titulo hide" >
           <h1>Código secreto</h1>
           <h2>Empecemos a Cifrar o Descifrar</h2>
+          <form>
           <label for="offset">Offset</label>
           <input type="number" id="offset" name="offset"  min="1">
           <br>
           <br>
-          <textarea name="ta1" id="ta1" cols="30" rows="10">Cifrar</textarea>
-          <textarea name="ta2" id="ta2" cols="30" rows="10">Descifrar</textarea>
+          <textarea name="ta1" id="ta1" cols="30" rows="10"></textarea>
+          <textarea name="ta2" id="ta2" cols="30" rows="10"></textarea>
           <br>
           <br>
           <button type="button" id="cifrar">Cifrar</button>
           <button type="button" id="descifrar">Descifrar</button>
           <button type="reset" id="limpiar">Borrar</button>
+        </form>
       </div>
     </main>
     <footer></footer>
