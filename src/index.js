@@ -49,15 +49,19 @@ cifrar.addEventListener("click",() =>{
   for (let i = 0; i < string.length; i++) {
     let codeAscii = string.charCodeAt(i); //obtener codigo ascii
     //console.log(codeAscii);
-       if(codeAscii >=65 && codeAscii < 90) {
-       let cifrado = (codeAscii-65 + offset) % 26 + 65;
+       if(codeAscii >=65 && codeAscii <= 90) {
+       let cifrado = (codeAscii-65 + parseInt(offset)) % 26 + 65;
        msjcifrado += String.fromCharCode(cifrado);
-    // 
-  }
-  console.log(msjcifrado)
+       
+       }
+         else {
+           msjcifrado+= string[i]
+         }
+
   }
   ta2.value = msjcifrado;
   });
+   
   //Evento para descifrar
   descifrar.addEventListener("click", () =>{
     let string = ta1.value;
@@ -66,24 +70,21 @@ cifrar.addEventListener("click",() =>{
     let msjdescifrado =""; //variable mensaje descifrado
     for (let i = 0; i < string.length; i++) {
       let codeAscii = string.charCodeAt(i); //obtener codigo ascii
-    //console.log(codeAscii);
-       if(codeAscii >=65 && codeAscii < 90) {
-       let descifrado = (codeAscii-65 - offset) % 26 + 65;
-       msjdescifrado += String.fromCharCode(descifrado);
+    console.log(codeAscii);
+       if(codeAscii >=65 && codeAscii <= 90) {
+       let descifrado = (codeAscii-65 - parseInt(offset) ) % 26 + 65;
+          if (descifrado<65){
+            descifrado = descifrado+26;
+          }
+          msjdescifrado += String.fromCharCode(descifrado);
+          console.log(descifrado);
        }
+        else  {
+          msjdescifrado+= string[i]
+        }
        ta2.value = msjdescifrado;
       }
-      });
-    
+    });
+  
 
-
-
-
-  // for ( let i = 0; i < string.lenght; i++) {
-  //   let codeAscii= string.charCodeAt(i) //obtener codigo ascii
-  //   if(codeAscii ===65) {
-  //    let cifrado = (codeAscii-65 + offset) % 26 + 65;
-  //    msjcifrado += String.fromCharCode(cifrado);
-  // }
-  //return msjcifrado;
 
