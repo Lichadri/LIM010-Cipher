@@ -15,7 +15,6 @@ let ta2 = document.getElementById("ta2");
 let descifrar = document.getElementById("descifrar")
 //variable contador
 let cont=0;
-let total=3;
 
 //Evento para monstrar la segunda vista
 btn.addEventListener("click", () =>{
@@ -29,62 +28,28 @@ btn.addEventListener("click", () =>{
     else{
     error.classList.remove('hide')
     cont++
-    if( cont >= 3){
-    msjbloqueado.classList.remove('hide')
-    error.classList.add('hide')
-    saludo.classList.add('hide')
-    inicio.classList.add('hide')
+     if( cont >= 3){
+      msjbloqueado.classList.remove('hide')
+      error.classList.add('hide')
+      saludo.classList.add('hide')
+      inicio.classList.add('hide')
+     }
     }
-    }
-     
   });
 
 //Evento para cifrar
 cifrar.addEventListener("click",() =>{
   let string = ta1.value;
   let offset = offset1.value;
-//encode: (offset, string) => {
-  let msjcifrado = ""; //variable mensje cifrado
-
-  for (let i = 0; i < string.length; i++) {
-    let codeAscii = string.charCodeAt(i); //obtener codigo ascii
-    //console.log(codeAscii);
-       if(codeAscii >=65 && codeAscii <= 90) {
-       let cifrado = (codeAscii-65 + parseInt(offset)) % 26 + 65;
-       msjcifrado += String.fromCharCode(cifrado);
-       
-       }
-         else {
-           msjcifrado+= string[i]
-         }
-
-  }
-  ta2.value = msjcifrado;
+  ta2.value=cipher.encode(offset,string)
   });
    
   //Evento para descifrar
   descifrar.addEventListener("click", () =>{
-    let string = ta1.value;
-    let offset = offset1.value;
-
-    let msjdescifrado =""; //variable mensaje descifrado
-    for (let i = 0; i < string.length; i++) {
-      let codeAscii = string.charCodeAt(i); //obtener codigo ascii
-    console.log(codeAscii);
-       if(codeAscii >=65 && codeAscii <= 90) {
-       let descifrado = (codeAscii-65 - parseInt(offset) ) % 26 + 65;
-          if (descifrado<65){
-            descifrado = descifrado+26;
-          }
-          msjdescifrado += String.fromCharCode(descifrado);
-          console.log(descifrado);
-       }
-        else  {
-          msjdescifrado+= string[i]
-        }
-       ta2.value = msjdescifrado;
-      }
-    });
+   let string = ta1.value;
+   let offset = offset1.value;
+   ta2.value = cipher.decode(offset,string)
+   });
   
 
 

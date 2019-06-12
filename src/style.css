@@ -1,14 +1,25 @@
 /* Acá van tus reglas de estilo */
 /* */
-
+body{
+  background:chocolate
+ }
   
   .titulo{
-    color:red;
-    text-align: center;
+     color: rgb(255, 87, 51);
+     text-align: center;
+     font-family: 'Pacifico', cursive;
+     width: 30%;
+     background: aquamarine;
+     margin: 60px 400px;
+     padding: 40px;
+     height: 500px;
   }
+
+  
   h1{
     font-size: 26;
     font-weight: bold;
+    color: rgb(255, 87, 51);
   }
   
   .nombre{
