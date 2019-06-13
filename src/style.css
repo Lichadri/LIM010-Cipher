@@ -1,19 +1,29 @@
 /* Acá van tus reglas de estilo */
 /* */
 body{
-  background:chocolate
- }
-  
-  .titulo{
-     color: rgb(255, 87, 51);
-     text-align: center;
-     font-family: 'Pacifico', cursive;
-     width: 30%;
-     background: aquamarine;
-     margin: 60px 400px;
-     padding: 40px;
-     height: 500px;
+  background-image: url("https://user-images.githubusercontent.com/51204770/59454115-03a2d980-8dd7-11e9-9346-c5dbb68a5109.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  header{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 500%;
   }
+  
+  .titulo {
+    color: rgb(255, 87, 51);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    width: 30%;
+    background: #daffff;
+    margin: 2% 30%;
+    padding: 2% 5% 5% 5%;
+    height: 20%;
+    border: 10px solid blanchedalmond;
+    border-radius: 20px
+  
+}
 
   
   h1{
@@ -26,6 +36,7 @@ body{
     text-align: center;
     color:black;
   }
+  
   
   .hide {
     display: none;

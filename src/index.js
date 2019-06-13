@@ -5,7 +5,7 @@ const contrasenaCorrect=document.getElementById("contrasena")
 const btn= document.getElementById("btn");
 //variables para la segunda vista
 const saludo=document.getElementById('saludo');//id de 2° div
-const bienvenido=document.getElementById('nombre');//estilo que se mostrar
+//const bienvenido=document.getElementById('nombre');//estilo que se mostrar
 const error =document.getElementById("error");
 const msjbloqueado = document.getElementById("msjbloqueado");
 let ta1 = document.getElementById("ta1"); // tabla de texto

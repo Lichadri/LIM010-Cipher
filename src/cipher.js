@@ -27,7 +27,7 @@ window.cipher = {
             descifrado = descifrado+26;
           }
           msjdescifrado += String.fromCharCode(descifrado);
-          console.log(descifrado);
+          //console.log(descifrado);
        }
         else  {
           msjdescifrado+= string[i]
