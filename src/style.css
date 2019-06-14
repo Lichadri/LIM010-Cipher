@@ -4,11 +4,16 @@ body{
   background-image: url("https://user-images.githubusercontent.com/51204770/59454115-03a2d980-8dd7-11e9-9346-c5dbb68a5109.png");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family:  'Mali', cursive;
+  text-align: center;
+  color:#3c4444
+
 }
   header{
     text-align: center;
     font-family: 'Pacifico', cursive;
-    font-size: 500%;
+    font-size: 550%;
+    color:#710716
   }
   
   .titulo {
@@ -36,6 +41,7 @@ body{
     text-align: center;
     color:black;
   }
+  
   
   
   .hide {

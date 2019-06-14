@@ -15,4 +15,4 @@ Gracias al feedback de mis compañeras me hicieron notar algunos detalles de mi 
 ![prototipo 1](https://user-images.githubusercontent.com/51204770/58818440-8f588100-85f3-11e9-84e9-a326e808b452.jpg)
 
 ## Prototipo en Balsamiq
-![image](https://user-images.githubusercontent.com/51204770/59105618-eb741b80-88f9-11e9-9093-03064ccfb8c2.png)
+![Prototipo Balsamiq](https://user-images.githubusercontent.com/51204770/59511103-0a832800-8e7b-11e9-94d9-8f493c76bd3a.png)
