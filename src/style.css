@@ -1,51 +1,45 @@
 /* Acá van tus reglas de estilo */
 /* */
 body{
-  background-image: url("https://user-images.githubusercontent.com/51204770/59454115-03a2d980-8dd7-11e9-9346-c5dbb68a5109.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family:  'Mali', cursive;
+background-image: url("https://user-images.githubusercontent.com/51204770/59454115-03a2d980-8dd7-11e9-9346-c5dbb68a5109.png");
+background-repeat: no-repeat;
+background-size: cover;
+font-family:  'Mali', cursive;
+text-align: center;
+color:#3c4444
+
+}
+header {
+text-align: center;
+font-family: 'Pacifico', cursive;
+font-size: 150%;
+color:#710716
+}
+
+.titulo {
+color: rgb(255, 87, 51);
+text-align: center;
+font-family: 'Pacifico', cursive;
+width: 30%;
+background: #daffff;
+margin: 2% 30%;                                                          
+padding: 2% 5% 5% 5%;
+height: 20%;
+border: 10px solid blanchedalmond;
+border-radius: 20px;
+}
+h1 {
+  font-size: 250%;
+  font-weight: bold;
+  color: rgb(255, 87, 51);
+}
+
+.nombre{
   text-align: center;
-  color:#3c4444
-
+  color:black;
 }
-  header{
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-size: 550%;
-    color:#710716
-  }
-  
-  .titulo {
-    color: rgb(255, 87, 51);
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    width: 30%;
-    background: #daffff;
-    margin: 2% 30%;
-    padding: 2% 5% 5% 5%;
-    height: 20%;
-    border: 10px solid blanchedalmond;
-    border-radius: 20px
-  
+.hide {
+  display: none;
 }
-
-  
-  h1{
-    font-size: 26;
-    font-weight: bold;
-    color: rgb(255, 87, 51);
-  }
-  
-  .nombre{
-    text-align: center;
-    color:black;
-  }
-  
-  
-  
-  .hide {
-    display: none;
-  }
 
   

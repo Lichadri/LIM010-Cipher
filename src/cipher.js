@@ -5,17 +5,19 @@ window.cipher = {
 
   for (let i = 0; i < string.length; i++) {
     let codeAscii = string.charCodeAt(i); //obtener codigo ascii
-    //console.log(codeAscii);
        if(codeAscii >=65 && codeAscii <= 90) {
        let cifrado = (codeAscii-65 + parseInt(offset)) % 26 + 65;
        msjcifrado += String.fromCharCode(cifrado);
-       }
-         else {
-           msjcifrado+= string[i]
-         }
+       } 
+      else if(codeAscii >=97 && codeAscii <= 122) {
+      let cifrado = (codeAscii-97 + parseInt(offset)) % 26 + 97;
+      msjcifrado += String.fromCharCode(cifrado);
+      } else {
+        msjcifrado+= string[i]
+      }
   }
   return msjcifrado;
- },
+  },
   decode: (offset, string) => {
     /* Acá va tu código que descifra*/
     let msjdescifrado =""; //variable mensaje descifrado
@@ -27,12 +29,14 @@ window.cipher = {
             descifrado = descifrado+26;
           }
           msjdescifrado += String.fromCharCode(descifrado);
-          //console.log(descifrado);
-       }
-        else  {
+        }
+        else if(codeAscii >=97 && codeAscii <= 122) {
+          let descifrado = (codeAscii-97 - parseInt(offset) ) % 26 + 97;
+          msjdescifrado += String.fromCharCode(descifrado);
+        }else {
           msjdescifrado+= string[i]
         }
-      }
+    }
   return msjdescifrado; 
-      }
+ }
 };

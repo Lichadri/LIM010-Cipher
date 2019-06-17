@@ -24,17 +24,16 @@ btn.addEventListener("click", () =>{
     inicio.classList.add('hide')
     saludo.classList.remove('hide')
     error.classList.add('hide')
-    }
-    else{
-    error.classList.remove('hide')
-    cont++
-     if( cont >= 3){
-      msjbloqueado.classList.remove('hide')
-      error.classList.add('hide')
-      saludo.classList.add('hide')
-      inicio.classList.add('hide')
-     }
-    }
+    }else{
+      error.classList.remove('hide')
+      cont++
+        if( cont >= 3){
+          msjbloqueado.classList.remove('hide')
+          error.classList.add('hide')
+          saludo.classList.add('hide')
+          inicio.classList.add('hide')
+        }
+        }
   });
 
 //Evento para cifrar
@@ -45,11 +44,11 @@ cifrar.addEventListener("click",() =>{
   });
    
   //Evento para descifrar
-  descifrar.addEventListener("click", () =>{
-   let string = ta1.value;
-   let offset = offset1.value;
-   ta2.value = cipher.decode(offset,string)
-   });
+descifrar.addEventListener("click", () =>{
+  let string = ta1.value;
+  let offset = offset1.value;
+  ta2.value = cipher.decode(offset,string)
+  });
   
 
 
