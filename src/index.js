@@ -1,6 +1,6 @@
 /* Acá va tu código */
 //variables de la primera vista y obtener elemento
-const inicio=document.getElementById('inicio');//id de div
+const inicio=document.getElementById('inicio');//id de div saludo
 const contrasenaCorrect=document.getElementById("contrasena")
 const btn= document.getElementById("btn");
 //variables para la segunda vista
@@ -20,7 +20,7 @@ let cont=0;
 btn.addEventListener("click", () =>{
     const rpta = contrasenaCorrect.value;
     if(rpta=== "LABORATORIA" ){
-    //mostrar y oculta para la segunda vista
+    //mostrar y oculta para la segunda vista (saludo)
     inicio.classList.add('hide')
     saludo.classList.remove('hide')
     error.classList.add('hide')
